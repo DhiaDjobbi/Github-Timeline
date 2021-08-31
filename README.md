@@ -4,6 +4,8 @@
  
  **GitHub Timeline** combines the two to create a visual history of a users GitHub activity.
  
+ Project is available on : https://timeline-github.netlify.app
+ 
  
  
  
