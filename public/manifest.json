@@ -1,5 +1,5 @@
 {
-  "short_name": "React App",
+  "short_name": "GitHub Timeline",
   "name": "Create React App Sample",
   "icons": [
     {
@@ -19,7 +19,5 @@
     }
   ],
   "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "display": "standalone"
 }

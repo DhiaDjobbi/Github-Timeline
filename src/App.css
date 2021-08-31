@@ -1,3 +1,140 @@
-.App {
+body {
+  background-color: #FAFAFA;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #545c64; /* old IE */
+  background-color: #545c64; /* Modern Browsers */
+  width: 60%;
+}
+
+.timeline-container {
+  font-family: "Roboto", sans-serif;
+  max-width: 500px;
+  margin: 0 auto;
+  border-left: 4px solid #222;
+  padding-left: 25px;
+}
+.timeline-container h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  color: #00272b;
+  border-bottom: 1px solid #eee;
+}
+.timeline-container .event {
+  box-shadow: 0px 3px 6px -2px rgba(0, 0, 0, 0.2);
+  padding: 32px;
+  margin: 48px 0;
+  line-height: 2;
+  cursor: pointer;
+  position: relative;
+}
+.timeline-container .event::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border: 2px solid #000;
+  position: absolute;
+  left: -36px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  transition: all 300ms;
+}
+.timeline-container .event:hover {
+  box-shadow: 1px 6px 16px -1px rgba(0, 0, 0, 0.1);
+}
+.timeline-container .event:hover::before {
+  background: #0e76a8;
+}
+.timeline-container .event .event-date {
+  position: absolute;
+  left: -160px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+@media screen and (max-width: 700px) {
+  .timeline-container {
+    max-width: 100%;
+    margin-left: 8px;
+  }
+  .timeline-container .event .event-date {
+    position: static;
+    margin-bottom: -20px;
+  }
+}
+.service-box img {
+  float: left;
+  width: 130px;
+  margin-right: 20px;
+  min-height: 80px;
+  min-width: 80px;
+}
+.service-box:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.centerr {
+  margin: 0 auto;
+  max-width: 700px;
+}
+.pagetitle {
+  color: #0e76a8;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .service-box img {
+    float: none;
+    width: 100px;
+  }
+  .pagetitle {
+    font-size: 1.8rem;
+    margin: 20px 0;
+  }
+
+  .search {
+    margin: 0 auto;
+  }
+}
+input{
+  text-align: center; 
+}
+::-webkit-input-placeholder {
   text-align: center;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+
+/*
+ * Footer
+ */
+ .blog-footer {
+  padding: 2.5rem 0;
+  color: #000;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
 }
