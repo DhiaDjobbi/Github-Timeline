@@ -6,7 +6,7 @@ const Header = () => {
         <div className="row">
           <div className="col-lg-6 text-center centerr">
             <div className="service-box">
-              <img src="logo.svg" alt="Logo" />
+              <img src="logo.svg" alt="Github Logo" />
               <div className="content">
                 <h1 className="pagetitle mr-2">GitHub Timeline</h1>
                 <p style={{ color: "#545C64" }}>
